@@ -614,4 +614,4 @@ curl -vs URL --stderr - | awk '/^content-security-policy:/' | grep -Eo "[a-zA-Z0
 ```bash
 nmap -v0 HOST -oX /dev/stdout | jc --xml -p | jq -r '.nmaprun.host | (.address["@addr"] + ":" + .ports.port[]["@portid"])' | httpx --silent
 ```
-More Credits: https://github.com/harshinsecurity <3
+More Credits: harshinsecurity
